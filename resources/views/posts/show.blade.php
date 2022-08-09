@@ -2,7 +2,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <article class="mx-8">
+    <article>
         <h1 class="text-3xl mb-1">
             {{ $post->title }}
         </h1>

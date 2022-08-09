@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <section class="mx-8">
+    <section>
         <h1 class="text-3xl mb-6">
             Add new post
         </h1>

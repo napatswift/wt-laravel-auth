@@ -2,7 +2,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <section class="mx-8">
+    <section>
         <h1 class="text-3xl mx-4 mt-6">
             Tag: {{ $tag->name }}
         </h1>

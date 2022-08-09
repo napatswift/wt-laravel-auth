@@ -2,7 +2,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <section class="mx-8">
+    <section>
         <h1 class="text-3xl mx-4 mt-6">
             All Posts
         </h1>
@@ -10,6 +10,7 @@
             @foreach($posts as $post)
                 <a href="{{ route('posts.show', ['post' => $post->id]) }}"
                    class="block p-6 w-full bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 ">
+                    <h2 class="text-sm font-semibold text-slate-400">{{ $post->user->name }}</h2>
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                         {{ $post->title }}
                     </h5>
